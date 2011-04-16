@@ -58,7 +58,6 @@ td {
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent;
 }
 article,
 aside,
@@ -75,4 +74,129 @@ section {
 body {
   font: 62.5% / 1.5 Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
   text-align: center;
+  background: #000;
+}
+#wrapper {
+  width: 920px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  padding: 20px;
+}
+h1 {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+}
+h2 {
+  font-size: 1.6666666666666667em;
+  line-height: 0.9em;
+  margin-bottom: 0.9em;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+h4 {
+  font-size: 1.3333333333333333em;
+  line-height: 1.125em;
+  margin-bottom: 1.125em;
+}
+h5 {
+  font-size: 1.1666666666666667em;
+  line-height: 1.2857142857142858em;
+  margin-bottom: 1.2857142857142858em;
+}
+h6 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+p,
+q,
+cite,
+address {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+ul,
+ol,
+dl {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+li,
+dd,
+dt {
+  font-size: 1em;
+}
+a {
+  text-decoration: underline;
+  color: #33c;
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+code,
+samp,
+dfn,
+kbd,
+var,
+acronym,
+ins,
+del,
+abbr {
+  speak: spell-out;
+}
+acronym {
+  speak: normal;
+}
+header {
+  background: #f00060;
+}
+header nav {
+  width: 960px;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+}
+header nav ul {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 0;
+}
+header nav ul li {
+  display: inline;
+  margin-left: 1%;
+}
+header nav ul li a {
+  background: #fc9200;
+  display: inline-block;
+  padding: 5px 15px 6px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+header nav ul li a:hover {
+  background-color: #db0d5f;
+}
+footer {
+  width: 920px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  padding: 20px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-bottom-left-radius: 15px;
+  -o-border-bottom-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -moz-border-bottom-right-radius: 15px;
+  -o-border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }

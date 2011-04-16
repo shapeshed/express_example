@@ -1,3 +1,9 @@
+@import "mixins/css3"
+
+/* Reset
+Based on http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/
+Removed elements not supported in HTML5
+-----------------------------------------------------------------------------*/
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, address, cite, code,
@@ -7,29 +13,133 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td 
-    margin 0
-    padding 0
-    border 0
-    outline 0
-    font-size 100%
-    vertical-align baseline
-    background transparent
-
+  margin 0
+  padding 0
+  border 0
+  outline 0
+  font-size 100%
+  vertical-align baseline
+  
+/* 
+Trigger the new block level elements in to the correct content flow
+-----------------------------------------------------------------------------*/
 article, aside, dialog, figure, 
 footer, header, hgroup, menu, 
-nav, section 
-    display block 
+nav, section  
+  display block 
+      
 
-
+/* Set up document
+-----------------------------------------------------------------------------*/
 body
-    font 62.5%/1.5  Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif
-    text-align center
+  font 62.5%/1.5  Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif
+  text-align center
+  background: #000
 
+#wrapper
+  width 920px
+  text-align left 
+  margin-left auto 
+  margin-right auto
+  background #fff
+  padding 20px
 
+/* Typography
+-----------------------------------------------------------------------------*/
+h1
+  font-size 1em
+  margin-bottom 1.5em 
 
+h2 
+  font-size 1.6666666666666667em
+  line-height 0.9em
+  margin-bottom 0.9em
 
+h3 
+  font-size 1.5em
+  line-height 1em
+  margin-bottom 1em
 
+h4 
+  font-size 1.3333333333333333em
+  line-height 1.125em
+  margin-bottom 1.125em
 
+h5 
+  font-size 1.1666666666666667em
+  line-height 1.2857142857142858em
+  margin-bottom 1.2857142857142858em
 
+h6 
+  font-size 1em
+  line-height 1.5em
+  margin-bottom 1.5em
 
+// Font size: 18pt, Line Height: 18pt, Margin Bottom 18 pt
+p, q, cite, address
+  font-size 1.2em
+  line-height 1.5em
+  margin-bottom 1.5em
 
+ul, ol, dl
+  font-size 1.2em
+  margin-bottom 1.5em 
+
+li, dd, dt
+  font-size 1em 
+
+a
+  text-decoration underline
+  color #3333cc
+  outline none
+
+a:hover
+  text-decoration none
+
+code, samp, dfn, kbd, var, acronym, ins, del
+
+abbr 
+  speak spell-out
+
+acronym 
+  speak normal
+
+/* ---------------------------------
+* Header
+*--------------------------------- */
+header
+  background #F00060
+  nav 
+    width 960px
+    text-align right
+    margin-left auto 
+    margin-right auto
+    ul 
+      list-style none
+      padding 10px
+      margin-bottom 0
+      li 
+          display inline
+          margin-left 1%
+          a 
+              background #fc9200 
+              display inline-block
+              padding 5px 15px 6px 
+              color #fff
+              text-decoration none
+              position relative
+              cursor pointer
+              &:hover
+                  background-color #db0d5f 
+
+/* ---------------------------------
+* Footer
+*--------------------------------- */
+footer
+  width 920px
+  text-align left 
+  margin-left auto 
+  margin-right auto
+  background #fff
+  padding 20px
+  border-bottom-radius(15px)
