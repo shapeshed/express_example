@@ -83,10 +83,19 @@ body {
   margin-right: auto;
   background: #fff;
   padding: 20px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-bottom-left-radius: 15px;
+  -o-border-bottom-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -moz-border-bottom-right-radius: 15px;
+  -o-border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 h1 {
-  font-size: 1em;
-  margin-bottom: 1.5em;
+  font: 4em "ChunkFiveRegular";
+  color: #666;
+  margin-bottom: 0.75em;
 }
 h2 {
   font-size: 1.6666666666666667em;
@@ -189,18 +198,42 @@ header nav ul li a:hover {
   background-color: #db0d5f;
 }
 footer {
-  width: 920px;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  background: #fff;
-  padding: 20px;
-  -webkit-border-bottom-left-radius: 15px;
-  -moz-border-bottom-left-radius: 15px;
-  -o-border-bottom-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  -webkit-border-bottom-right-radius: 15px;
-  -moz-border-bottom-right-radius: 15px;
-  -o-border-bottom-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  color: #666;
+  border-top: 1px solid #ccc;
+  padding-top: 1.5em;
+}
+footer ul {
+  list-style: none;
+}
+.css-table {
+  width: 100%;
+  display: table;
+}
+.css-table .two-column {
+  display: table-row;
+}
+.css-table .two-column .cell {
+  display: table-cell;
+  vertical-align: top;
+  width: 50%;
+}
+.css-table .two-column .cell * {
+  width: 90%;
+}
+.css-table .three-column {
+  display: table-row;
+}
+.css-table .three-column .cell {
+  display: table-cell;
+  width: 33.33333%;
+}
+.css-table .three-column .cell * {
+  width: 90%;
+}
+.css-table .four-column {
+  display: table-row;
+}
+.css-table .four-column .cell {
+  display: table-cell;
+  width: 25%;
 }
