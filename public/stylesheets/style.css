@@ -161,6 +161,38 @@ abbr {
 acronym {
   speak: normal;
 }
+.css-table {
+  width: 100%;
+  display: table;
+}
+.css-table .two-column {
+  display: table-row;
+}
+.css-table .two-column .cell {
+  display: table-cell;
+  vertical-align: top;
+  width: 50%;
+}
+.css-table .two-column .cell * {
+  width: 90%;
+}
+.css-table .three-column {
+  display: table-row;
+}
+.css-table .three-column .cell {
+  display: table-cell;
+  width: 33.33333%;
+}
+.css-table .three-column .cell * {
+  width: 90%;
+}
+.css-table .four-column {
+  display: table-row;
+}
+.css-table .four-column .cell {
+  display: table-cell;
+  width: 25%;
+}
 header {
   background: #f00060;
 }
@@ -202,36 +234,4 @@ footer {
 }
 footer ul {
   list-style: none;
-}
-.css-table {
-  width: 100%;
-  display: table;
-}
-.css-table .two-column {
-  display: table-row;
-}
-.css-table .two-column .cell {
-  display: table-cell;
-  vertical-align: top;
-  width: 50%;
-}
-.css-table .two-column .cell * {
-  width: 90%;
-}
-.css-table .three-column {
-  display: table-row;
-}
-.css-table .three-column .cell {
-  display: table-cell;
-  width: 33.33333%;
-}
-.css-table .three-column .cell * {
-  width: 90%;
-}
-.css-table .four-column {
-  display: table-row;
-}
-.css-table .four-column .cell {
-  display: table-cell;
-  width: 25%;
 }
