@@ -47,104 +47,10 @@ body
 
 /* Typography
 -----------------------------------------------------------------------------*/
-h1
-  font 4em 'ChunkFiveRegular'
-  color #666
-  margin-bottom .75em
+@import "partials/typography"
 
-h2 
-  font-size 1.6666666666666667em
-  line-height 0.9em
-  margin-bottom 0.9em
-
-h3 
-  font-size 1.5em
-  line-height 1em
-  margin-bottom 1em
-
-h4 
-  font-size 1.3333333333333333em
-  line-height 1.125em
-  margin-bottom 1.125em
-
-h5 
-  font-size 1.1666666666666667em
-  line-height 1.2857142857142858em
-  margin-bottom 1.2857142857142858em
-
-h6 
-  font-size 1em
-  line-height 1.5em
-  margin-bottom 1.5em
-
-// Font size: 18pt, Line Height: 18pt, Margin Bottom 18 pt
-p, q, cite, address
-  font-size 1.2em
-  line-height 1.5em
-  margin-bottom 1.5em
-
-ul, ol, dl
-  font-size 1.2em
-  margin-bottom 1.5em 
-
-li, dd, dt
-  font-size 1em 
-
-a
-  text-decoration underline
-  color #3333cc
-  outline none
-
-a:hover
-  text-decoration none
-
-code, samp, dfn, kbd, var, acronym, ins, del
-
-abbr 
-  speak spell-out
-
-acronym 
-  speak normal
-
-/* ---------------------------------
-* Header
-*--------------------------------- */
-header
-  background #F00060
-  nav 
-    width 960px
-    text-align right
-    margin-left auto 
-    margin-right auto
-    ul 
-      list-style none
-      padding 10px
-      margin-bottom 0
-      li 
-          display inline
-          margin-left 1%
-          a 
-              background #fc9200 
-              border-radius(15px)
-              display inline-block
-              padding 5px 15px 6px 
-              color #fff
-              text-decoration none
-              position relative
-              cursor pointer
-              &:hover
-                  background-color #db0d5f 
-
-/* ---------------------------------
-* Footer
-*--------------------------------- */
-footer
-  color #666
-  border-top 1px solid #ccc
-  padding-top 1.5em
-  ul 
-    list-style none
-
+/* CSS Tables
+-----------------------------------------------------------------------------*/
 .css-table
   width 100%
   display table
@@ -168,5 +74,43 @@ footer
     .cell
       display table-cell
       width 25%
+
+/* Header
+-----------------------------------------------------------------------------*/
+header
+  background #F00060
+  nav 
+    width 960px
+    text-align right
+    margin-left auto 
+    margin-right auto
+    ul 
+      list-style none
+      padding 10px
+      margin-bottom 0
+      li 
+        display inline
+        margin-left 1%
+        a 
+          background #fc9200 
+          border-radius(15px)
+          display inline-block
+          padding 5px 15px 6px 
+          color #fff
+          text-decoration none
+          position relative
+          cursor pointer
+          &:hover
+            background-color #db0d5f 
+
+/* Footer
+-----------------------------------------------------------------------------*/
+footer
+  color #666
+  border-top 1px solid #ccc
+  padding-top 1.5em
+  ul 
+    list-style none
+
 
 

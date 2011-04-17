@@ -93,47 +93,45 @@ body {
   border-bottom-right-radius: 15px;
 }
 h1 {
-  font: 4em "ChunkFiveRegular";
   color: #666;
-  margin-bottom: 0.75em;
-}
-h2 {
-  font-size: 1.6666666666666667em;
+  font: 4em "ChunkFiveRegular";
   line-height: 0.9em;
   margin-bottom: 0.9em;
 }
-h3 {
-  font-size: 1.5em;
+h2 {
+  font-size: 1.8em;
   line-height: 1em;
   margin-bottom: 1em;
 }
+h3 {
+  font-size: 1.6em;
+  line-height: 1.13em;
+  margin-bottom: 1.13em;
+}
 h4 {
-  font-size: 1.3333333333333333em;
-  line-height: 1.125em;
-  margin-bottom: 1.125em;
+  font-size: 1.4em;
+  line-height: 1.29em;
+  margin-bottom: 1.29em;
 }
 h5 {
-  font-size: 1.1666666666666667em;
-  line-height: 1.2857142857142858em;
-  margin-bottom: 1.2857142857142858em;
+  font-size: 1.3em;
+  line-height: 1.38em;
+  margin-bottom: 1.38em;
 }
 h6 {
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.5em;
   margin-bottom: 1.5em;
 }
 p,
 q,
 cite,
-address {
-  font-size: 1.2em;
-  line-height: 1.5em;
-  margin-bottom: 1.5em;
-}
+address,
 ul,
 ol,
 dl {
   font-size: 1.2em;
+  line-height: 1.5em;
   margin-bottom: 1.5em;
 }
 li,
