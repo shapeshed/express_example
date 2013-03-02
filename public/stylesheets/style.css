@@ -1,3 +1,7 @@
+/* Reset
+Based on http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/
+Removed elements not supported in HTML5
+-----------------------------------------------------------------------------*/
 html,
 body,
 div,
@@ -59,6 +63,9 @@ td {
   font-size: 100%;
   vertical-align: baseline;
 }
+/* 
+Trigger the new block level elements in to the correct content flow
+-----------------------------------------------------------------------------*/
 article,
 aside,
 dialog,
@@ -71,8 +78,10 @@ nav,
 section {
   display: block;
 }
+/* Set up document
+-----------------------------------------------------------------------------*/
 body {
-  font: 62.5% / 1.5 Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+  font: 62.5%/1.5 Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
   text-align: center;
   background: #000;
 }
@@ -92,9 +101,11 @@ body {
   -o-border-bottom-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+/* Typography
+-----------------------------------------------------------------------------*/
 h1 {
   color: #666;
-  font: 4em "ChunkFiveRegular";
+  font: 4em 'ChunkFiveRegular';
   line-height: 0.9em;
   margin-bottom: 0.9em;
 }
@@ -161,6 +172,8 @@ abbr {
 acronym {
   speak: normal;
 }
+/* CSS Tables
+-----------------------------------------------------------------------------*/
 .css-table {
   width: 100%;
   display: table;
@@ -193,6 +206,8 @@ acronym {
   display: table-cell;
   width: 25%;
 }
+/* Header
+-----------------------------------------------------------------------------*/
 header {
   background: #f00060;
 }
@@ -227,6 +242,8 @@ header nav ul li a {
 header nav ul li a:hover {
   background-color: #db0d5f;
 }
+/* Footer
+-----------------------------------------------------------------------------*/
 footer {
   color: #666;
   border-top: 1px solid #ccc;
