@@ -14,6 +14,9 @@
     "jade": "0.28.1",
     "stylus": "0.32.1"
   },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
   "devDependencies": {
     "mocha": "1.15.1"
   }
