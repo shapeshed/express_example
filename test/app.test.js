@@ -1,21 +1,17 @@
-
-// Run $ expresso
-
-/**
- * Module dependencies.
- */
-
-var app = require('../app')
-  , assert = require('assert');
+var app = require('../app'),
+  assert = require('assert'),
+  http = require('http');
 
 
-module.exports = {
-  'GET /': function(){
-    assert.response(app,
-      { url: '/' },
-      { status: 200, headers: { 'Content-Type': 'text/html; charset=utf-8' }},
-      function(res){
-        assert.includes(res.body, '<title>Express</title>');
-      });
-  }
-};
+describe('GET /', function(){
+
+  it('should return a 200 status code', function (done){
+    http.get({ host: '0.0.0.0', port: 3000 }, function(res) {
+      assert.deepEqual(res.statusCode, 200)
+      done();
+    }).on('error', function(e) {
+      throw new Error(e);
+    });
+  });
+
+});
