@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "engines": {
     "node": "0.10.x"
@@ -12,9 +13,6 @@
     "express": "3.1.0",
     "jade": "0.28.1",
     "stylus": "0.32.1"
-  },
-  "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
   },
   "devDependencies": {
     "mocha": "1.15.1"
