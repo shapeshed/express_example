@@ -1,9 +1,8 @@
 language: node_js
 node_js:
-  - '0.10'
+- '0.10'
 deploy:
   provider: heroku
-  app: express-tutorial 
+  app: express-tutorial
   api_key:
-    secure: FF7yK8m9adIZR9fmlyaVK1E+7EgROvZY9kznX+k2ik77EhQZ5y0l27c5jSPLmNcraeI3MXjVQ5kQLElGCRZvg/Y+dWg7XIOT5aRlvcrfxigkZJYnAYb8FFaGjkh7B+EmFhMO+D7wgx3oFqZnfUGtPN/TNpfhf3YTR9CTnxnMoj0=
-
+    secure: TLcy5QZ3SimYNndcIcUXYGKgWBDOYdfx6T9erNVZtOAnGvHK1b0g4rJnCYr19N0m5aBKE3Pkteq8zz6hPq+VhtnJRnv5FJ+krBLz5nZkaPdjuHyh1909jXdqSCnB8fNU6tjVavnnJSO9KY3rRbSDarsMTLAhXcPOGjIpj15FkAE=
