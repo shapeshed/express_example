@@ -1,4 +1,4 @@
-# Example Express Application
+# Example Express Application2
 
 [![Build Status](https://travis-ci.org/shapeshed/express_example.png?branch=master)](https://travis-ci.org/shapeshed/express_example)
 
