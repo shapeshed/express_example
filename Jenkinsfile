@@ -1,19 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('Docker build') {
+    stage('Build') {
       steps {
-        sh 'docker build -t webapp:$BUILD_NUMBER .'
+        sh 'npm install'
       }
     }
-    stage('Docker push') {
+    stage('Test') {
       steps {
-        withCredentials(bindings: [usernamePassword(credentialsId: 'acr', passwordVariable: 'pass', usernameVariable: 'user')]) {
-          sh '''docker login ${registry} --username $user --password $pass
-docker tag webapp:$BUILD_NUMBER ${registry}
-docker push ${registry}'''
-        }
-
+        sh 'npm test'
       }
     }
   }
