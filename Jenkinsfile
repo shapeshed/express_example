@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Docker build') {
       steps {
-        sh 'sudo docker build -t webapp .'
+        sh 'docker build -t webapp .'
       }
     }
   }
