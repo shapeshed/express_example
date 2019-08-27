@@ -8,6 +8,7 @@ pipeline {
     }
   }
   environment {
-    cred = 'acr'
+    registryCredential = 'acr'
+    registry = 'demo2sdfasdfasdf.azurecr.io/webapp'
   }
 }
