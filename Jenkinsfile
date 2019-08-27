@@ -12,7 +12,7 @@ pipeline {
           }
       steps {
         withCredentials(bindings: [usernamePassword(credentialsId: 'acr', passwordVariable: 'pass', usernameVariable: 'user')]) {
-          sh '''docker login ${registry}--username $user --password $pass
+          sh '''docker login ${registry} --username $user --password $pass
 docker tag webapp:$BUILD_NUMBER ${registry}:dev
 docker push ${registry}:dev'''
         }
