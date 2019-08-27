@@ -1,10 +1,10 @@
 pipeline {
   agent any
+    stages {
   stage('Deploy app to development') {
       when {
           branch 'Development'
       }
-    stages {
       stage('Docker build') {
         steps {
           sh 'docker build -t webapp:$BUILD_NUMBER .'
@@ -19,14 +19,12 @@ pipeline {
           }
 
         }
-      }
     }
   }
   stage('Deploy app to master') {
       when {
           branch 'master'
       }
-    stages {
       stage('Docker build') {
         steps {
           sh 'docker build -t webapp:$BUILD_NUMBER .'
@@ -41,9 +39,9 @@ pipeline {
           }
 
         }
-      }
     }
   }
+    }
   environment {
     registry = 'youracrname.azurecr.io/webapp'
   }
