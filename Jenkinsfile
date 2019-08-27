@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Docker push') {
       steps {
-        withCredentials([usernamePassword(credentialsId: 'acr', passwordVariable: 'pass', usernameVariable: 'us
+        withCredentials([usernamePassword(credentialsId: 'acr', passwordVariable: 'pass', usernameVariable: 'user')]) {
         sh '''docker login ${registry} --username $user --password $pass
 docker tag webapp:$BUILD_NUMBER ${registry}
 docker push ${registry}'''
