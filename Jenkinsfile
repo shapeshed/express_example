@@ -7,4 +7,7 @@ pipeline {
       }
     }
   }
+  environment {
+    cred = 'acr'
+  }
 }
